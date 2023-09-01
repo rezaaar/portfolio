@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Recursive:wght@400;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    position: relative;
+}
+
+.main::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.content {
+    position: relative;
+}
